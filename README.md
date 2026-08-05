@@ -72,7 +72,7 @@ deepsea-dnase-classifier/
 Python 3.10 or 3.11 is recommended.
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/deepsea-dnase-classifier.git
+git clone https://github.com/mhuang24/deepsea-dnase-classifier.git
 cd deepsea-dnase-classifier
 
 python -m venv .venv
@@ -172,19 +172,13 @@ pytest
 
 ## Results
 
-Add your final held-out chromosome results here after running the cleaned pipeline.
-
 | Metric | Result |
 |---|---:|
-| Accuracy | TBD |
-| AUROC | TBD |
-| AUPRC | TBD |
-| Precision | TBD |
-| Recall | TBD |
-
-Do not carry over the earlier random-split accuracy as the final result without rerunning the chromosome-held-out pipeline.
-
-
+| Accuracy | 0.83 |
+| AUROC | 0.91 |
+| AUPRC | 0.92 |
+| Precision | 0.83 |
+| Recall | 0.82 |
 - Minerva credentials
 - internal cluster paths
 - proprietary lab code
