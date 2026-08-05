@@ -171,7 +171,7 @@ pytest
 ```
 
 ## Results
-
+On a development subset of 30,000 peaks, using chromosome-held-out validation and testing, MiniSEA achieved a test AUROC of 0.912 and AUPRC of 0.917. Early stopping selected epoch 7. These results are intended as a pipeline validation rather than a final full-dataset benchmark
 | Metric | Result |
 |---|---:|
 | Accuracy | 0.83 |
@@ -179,7 +179,3 @@ pytest
 | AUPRC | 0.92 |
 | Precision | 0.83 |
 | Recall | 0.82 |
-- Minerva credentials
-- internal cluster paths
-- proprietary lab code
-- model checkpoints trained on restricted data
