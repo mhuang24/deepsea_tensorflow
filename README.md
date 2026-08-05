@@ -184,22 +184,7 @@ Add your final held-out chromosome results here after running the cleaned pipeli
 
 Do not carry over the earlier random-split accuracy as the final result without rerunning the chromosome-held-out pipeline.
 
-## Resume-ready description
 
-> Implemented a DeepSEA-inspired TensorFlow CNN to classify chromatin accessibility from 1,000-bp hg38 sequences and ENCODE DNase-seq peaks.
-
-> Built a reproducible genomic preprocessing pipeline for interval filtering, non-overlapping negative sampling, DNA one-hot encoding, and chromosome-held-out evaluation.
-
-> Evaluated model performance using accuracy, AUROC, AUPRC, precision, and recall while testing dropout, L1/L2 regularization, and early stopping.
-
-## Data and privacy
-
-This repository should contain only public genomic resources and your own implementation.
-
-Do not commit:
-
-- Mount Sinai BioMe data
-- patient-derived data
 - Minerva credentials
 - internal cluster paths
 - proprietary lab code
