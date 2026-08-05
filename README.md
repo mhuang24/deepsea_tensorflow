@@ -23,8 +23,9 @@ MiniSEA currently treats one ENCODE DNase-seq experiment as a binary classificat
 - negative: a randomly sampled 1,000-bp sequence that does not overlap a positive interval
 
 ## Architecture
+<img width="432" height="2311" alt="Untitled" src="https://github.com/user-attachments/assets/ce866d6b-a139-49ab-ab6d-58422e74d911" />
 
-<img width="143" height="744" alt="image" src="https://github.com/user-attachments/assets/c363d331-8f7c-441d-97db-47da65446c63" />
+
 
 
 ## Repository structure
