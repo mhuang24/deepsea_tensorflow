@@ -24,19 +24,8 @@ MiniSEA currently treats one ENCODE DNase-seq experiment as a binary classificat
 
 ## Architecture
 
-Input: `1000 x 4` one-hot encoded DNA sequence
+<img width="143" height="744" alt="image" src="https://github.com/user-attachments/assets/c363d331-8f7c-441d-97db-47da65446c63" />
 
-1. Conv1D: 320 filters, kernel size 8, ReLU
-2. MaxPooling1D: pool size 4
-3. Dropout: 0.20
-4. Conv1D: 480 filters, kernel size 8, ReLU
-5. MaxPooling1D: pool size 4
-6. Dropout: 0.20
-7. Conv1D: 960 filters, kernel size 8, ReLU
-8. Flatten
-9. Dense: 925 units, ReLU
-10. Dropout: 0.50
-11. Dense: 1 unit, sigmoid
 
 ## Repository structure
 
@@ -171,11 +160,14 @@ pytest
 ```
 
 ## Results
-On a development subset of 30,000 peaks, using chromosome-held-out validation and testing, MiniSEA achieved a test AUROC of 0.912 and AUPRC of 0.917. Early stopping selected epoch 7. These results are intended as a pipeline validation rather than a final full-dataset benchmark
+MiniSEA was evaluated using chromosome-held-out validation and testing on a **30,000-peak development subset** of ENCODE DNase-seq data. Early stopping selected the best model at **epoch 7**.
+
+These results validate the complete training and evaluation pipeline. A full-dataset benchmark is planned as future work.
+
 | Metric | Result |
-|---|---:|
-| Accuracy | 0.83 |
-| AUROC | 0.91 |
-| AUPRC | 0.92 |
-| Precision | 0.83 |
-| Recall | 0.82 |
+|--------|-------:|
+| Accuracy | 0.829 |
+| AUROC | 0.912 |
+| AUPRC | 0.917 |
+| Precision | 0.834 |
+| Recall | 0.821 |
