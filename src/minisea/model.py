@@ -10,7 +10,6 @@ def build_minisea(
     l1: float = 1e-8,
     l2: float = 5e-7,
 ) -> tf.keras.Model:
-    """Build the DeepSEA-inspired MiniSEA binary classifier."""
     elastic = regularizers.l1_l2(l1=l1, l2=l2)
 
     model = tf.keras.Sequential(
@@ -58,7 +57,6 @@ def compile_model(
     *,
     learning_rate: float = 1e-3,
 ) -> None:
-    """Compile MiniSEA with binary classification metrics."""
     model.compile(
         optimizer=tf.keras.optimizers.Adam(learning_rate=learning_rate),
         loss="binary_crossentropy",
