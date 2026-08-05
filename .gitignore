@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Editors and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+
+# Raw and processed genomic data
+data/raw/
+data/processed/
+*.fa
+*.fa.gz
+*.fai
+*.bed
+*.bed.gz
+*.npz
+
+# Models and experiment outputs
+outputs/
+checkpoints/
+*.keras
+*.h5
+
+# Generated plots and metrics
+results/*.png
+results/*.json
+results/*.csv

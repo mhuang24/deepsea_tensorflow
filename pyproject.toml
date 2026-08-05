@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "minisea"
+version = "0.1.0"
+description = "DeepSEA-inspired DNase accessibility classifier"
+readme = "README.md"
+requires-python = ">=3.10,<3.12"
+dependencies = [
+    "intervaltree>=3.1,<4",
+    "matplotlib>=3.8,<4",
+    "numpy>=1.26,<3",
+    "pandas>=2.1,<3",
+    "pyfaidx>=0.8,<1",
+    "scikit-learn>=1.4,<2",
+    "tensorflow>=2.16,<3",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<9"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
